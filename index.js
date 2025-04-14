@@ -46,6 +46,13 @@ const numbers = [
 //  document.body.innerHTML += `<p>${Math.abs(number - 5)}</p>`;
 //  });
 
+numbers.forEach((number) => {
+ 
+    const vzdalenostOdCislaPet = Math.abs(number - 5)
+    const druhaMocnina = (vzdalenostOdCislaPet * vzdalenostOdCislaPet)
+        document.body.innerHTML += `<p>${druhaMocnina}</p>`;
+});
+
 // numbers.forEach((number) => {
 //     document.body.innerHTML += `<p>${(number - 5) * (number)}</p>`;
 // });
@@ -60,10 +67,10 @@ const numbers = [
 // const average = count / numbers.length;
 //     document.body.innerHTML += `<p>${average}</p>`;
 
-const positiveValues = numbers
-    .filter(num => num > 0)
-    .reduce((acc, num) => acc + num, 0);
-        document.body.innerHTML += `<p>${positiveValues}</p>`;
+// const positiveValues = numbers
+//     .filter(num => num > 0)
+//     .reduce((acc, num) => acc + num, 0);
+//         document.body.innerHTML += `<p>${positiveValues}</p>`;
 
 
 
